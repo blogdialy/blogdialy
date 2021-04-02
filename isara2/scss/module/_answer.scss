@@ -1,0 +1,45 @@
+.answer {
+
+  &__box {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 20px 0;
+    font-style: italic;
+    text-align: left;
+    color: #777777;
+
+    &-img {
+      width: 33%;
+      padding-right: 15px;
+
+      img {
+        border: 2px solid #ebb94d;
+      }
+    }
+
+    &-txt {
+      font-size: 14px;
+      width: 66%;
+      padding-left: 15px;
+      margin: -5px;
+
+      small {
+        display: inline-block;
+        margin-top: 8px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .answer {
+    &__box {
+      max-width: calc(100% - 40px);
+
+      &-txt {
+        font-size: 18px;
+      }
+    }
+  }
+}

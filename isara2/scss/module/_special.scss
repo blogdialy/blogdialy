@@ -1,0 +1,109 @@
+.special {
+  background-color: #f7c23c;
+  background-position: calc(100% - 9px);
+  background-size: 175px;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  text-align: center;
+
+  &__ttl {
+    margin-bottom: 20px!important;
+  }
+
+  &__contents {
+    position: relative;
+    bottom: -37px;
+    width: 250px;
+    background-color: #f7c23c;
+    margin: 0 auto;
+  }
+
+  &__box {
+    width: 90%!important;
+    margin: 0 30px;
+    padding: 30px;
+    border: 2px solid #fff;
+  }
+
+  &__boxForIp {
+    &-box {
+      color: #fff;
+      margin: 15px 0;
+      overflow: hidden;
+    }
+
+    &-boxLeft {
+      float: left;
+      width: 30%;
+      padding: 0;
+    }
+
+    &-circle {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 14px;
+      color: #ebb94d;
+      background-color: #fff;
+      text-align: center;
+      display: inline-block;
+      border-radius: 50%;
+    }
+
+    &-boxRight {
+      padding: 12px 0;
+      overflow: hidden;
+      text-align: left;    
+    }
+  }
+
+  &__boxForPc {  
+    display: none!important;
+
+    &-circle {
+      width: 250px;
+      height: 250px;
+      background-color: #ffffff;
+      margin: 10px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 50%;
+    }
+
+    &-circleIn {
+      padding: 15px;
+      height: 250px;
+      display: table-cell;
+      vertical-align: middle;
+
+      .txts {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .special {
+    padding: 40px;
+
+    &__contents {
+      width: 400px;
+      bottom: -76px;
+    }
+
+    &__box {
+      margin-top: 40px;
+      padding: 40px;
+
+    }
+
+    &__boxForPc {
+      display: flex!important;
+    }
+
+    &__boxForIp {
+      display: none;
+    }
+  }
+}

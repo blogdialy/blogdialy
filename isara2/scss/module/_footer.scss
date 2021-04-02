@@ -1,0 +1,19 @@
+.footer {
+  padding: 20px 15px 0 0;
+  position: relative;
+  background-color: #ececec;
+  text-align: center;
+
+  &__copyright {
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+}
+
+@include media(pc) {
+  .footer {
+    padding: 40px 15px 20px 15px;
+  }
+}

@@ -1,0 +1,50 @@
+.specialDetail {
+  background-image: url(../img/specialdetail.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 10px;
+
+  .txtm {
+    margin-bottom: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .blanketBox {
+    margin-bottom: 20px;
+
+    &::before, &::after {
+      @include blankets;
+    }
+
+    &::before {
+      @include blanket-before(#fff);
+    }
+
+    &::after {
+      @include blanket-after(#fff);
+    }
+
+    .txtl {
+      line-height: 40px;
+    }
+  }
+}
+
+@include media(tablet) {
+  .specialDetail {
+    .txtm {
+      font-size: 15px;
+    }
+  }
+}
+
+@include media(pc) {
+  .specialDetail {
+    .txtm {
+      font-size: 20px;
+    }
+  }
+}

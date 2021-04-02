@@ -1,0 +1,55 @@
+.class {
+  color: #fff;
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__contents {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  &__box { 
+    margin-top: 15px;
+
+    &-in {
+      border: 2px solid #016ea9;
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 0;
+    }
+
+    &-ttl {
+      padding: 15px;
+      background-color: #016ea9;
+    }
+
+    li {
+      color: #000000;
+      font-weight: 600;
+      padding: 10px;
+      margin: 0;
+      border-bottom: 1px dotted #e5e5e5;
+    }
+  }
+}
+
+@include media(tablet) {
+  .class {
+    &__contents {
+      padding: 30px 10%;
+    }
+
+  }
+}
+
+.classBottom {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #016ea9;
+
+  .txtm {
+    margin: 0;
+  }
+}

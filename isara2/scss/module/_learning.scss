@@ -1,0 +1,65 @@
+.learning {
+  &__ttl {
+    margin-bottom: 35px!important;
+
+    .txts {
+      font-weight: 600;
+    }
+  }
+
+  .txtm {
+    font-weight: 300;
+  }
+
+  
+
+  .container {
+    max-width: 450px;
+    padding: 0 50px;
+    margin-top: 0;
+    margin-bottom: 15px; 
+    
+    .row {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    padding: 5px;
+    width: auto!important;
+    
+    img {
+      width: 120px;
+    }
+  }
+
+  .txts {
+    font-weight: 600;
+  }
+}
+
+@include media(tablet) {
+  .learning {
+    &__box {
+      img {
+        width: 180px;
+      }
+    }
+
+    .container {
+      padding: 0 20%;
+    }
+  }
+}
+
+@include media(tablet) {
+  .learning {
+    .container {
+      padding: 0;
+      width: 860px;
+      max-width: calc(100% - 40px);
+      margin: 40px auto;
+    }
+  }
+}

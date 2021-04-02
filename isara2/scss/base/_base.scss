@@ -1,0 +1,186 @@
+// 全体設定
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  background: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+h2, h3 {
+  margin-top: 20px!important;
+  margin-bottom: 10px!important;
+}
+
+.base {
+  padding: 20px 0;
+  text-align: center;
+}
+
+@include media(tablet) {
+  .base {
+    padding: 40px 0;
+  }
+}
+
+.contaner {
+  overflow: hidden;
+}
+
+.container2 {
+  max-width: 100%;
+  width: auto;
+  overflow: hidden;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+// テキスト
+.txtxs {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+@include media(pc) {
+  .txtxs {
+    font-size: 16px;
+  }
+}
+
+.txts {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+@include media(tablet) {
+  .txts {
+    font-size: 14px;
+  }
+}
+
+@include media(pc) {
+  .txts {
+    font-size: 16px;
+  }
+}
+
+.txtm {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@include media(pc) {
+  .txtm {
+    font-size: 20px;
+  }
+}
+
+.txtl {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@include media(tablet) {
+  .txtl {
+    font-size: 24px;
+  }
+}
+
+@include media(pc) {
+  .txtl {
+    font-size: 28px;
+  }
+}
+
+  // テキストの強調
+  .strong {
+    color: #ebb94d;
+  }
+
+  .whiteTxt {
+    color: #fff;
+  }
+
+  // タイトルの囲い
+  .blanketBox {
+    line-height: 40px;
+    margin: 0 auto;
+    position: relative;
+    width: 95%;
+    padding: 5px 20px;
+  }
+  
+  @include media(tablet) {
+    .blanketBox {
+      width: 860px;
+      max-width: calc(100% - 40px);
+      padding: 15px 0;
+    }
+  }
+
+// 画像
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-width: 100%;
+}
+
+// リスト
+ul {
+  list-style-type: none;
+}
+
+// リンク
+a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+// 段落
+.brsp {
+  display: block;
+}
+
+@include media(tablet) {
+  .brsp {
+    display: none;
+  }
+}
+
+.brpc {
+  display: block;
+}
+
+@include media(ip) {
+  .brpc {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+.bangkok {
+  background-image: url(../img/bangkokbgsp.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px 15px;
+
+  &__contents {
+    width: 1170px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+
+    &-ttl {
+      text-align: center;
+      letter-spacing: 3px;
+      margin-bottom: 20px!important;
+    }
+
+    &-list {
+      .txts {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .bangkok {
+    padding: 40px;
+
+    &__contents {
+      &-ttl {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@include media(pc) {
+  .bangkok {
+    padding: 80px 80px;
+  }
+}

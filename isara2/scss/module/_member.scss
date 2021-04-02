@@ -1,0 +1,57 @@
+.member {
+  padding: 20px 0;
+  background: url(../img/teacherbgsp.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+
+  &__subttl {
+    font-weight: 600;
+  }
+
+  &__box {
+    img  {
+      position: relative;
+      bottom: -35px;
+      border-radius: 50%;
+    }
+  }
+
+  &__intro {
+    padding: 40px 10px 10px 10px;
+    border: 3px solid #fff;
+
+    &-txt {
+      text-align: left;
+    }
+  }
+}
+
+@include media(tablet) {
+  .member {
+    padding: 50px;
+
+    &__intro {
+      padding: 40px;
+    }
+  }
+}
+
+@include media(ip) {
+  .member {
+    &__box {
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@include media(pc) {
+  .member {
+    &__intro {
+      min-height: 398px;
+    }
+  }
+}

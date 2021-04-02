@@ -1,0 +1,54 @@
+.contact {
+  background-color: #ebb94d;
+  text-align: center;
+  color: #ffffff;
+  padding: 30px 0;
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  code {
+    padding: 2px 4px;
+    background-color: #F9F2F4;
+    border-radius: 4px;
+    font-size: 90%;
+    color: #C7254E;
+    font-weight: bold;
+  }
+
+  &__btn {
+   @extend  .contactBtn;
+   border-radius: 50px;
+   padding: 15px 20px;
+   margin: 10px 20px;
+   max-width: 1028px;
+
+   p {
+     margin: 0;
+   }
+  }
+
+  &__txt {
+    font-size: 150%;
+    font-weight: 600;
+    }
+  }
+
+@include media(tablet) {
+  .contact {
+    &__btn {
+      padding: 25px 50px;
+      margin: 10px 80px;
+    }
+  }
+}
+
+@include media(pc) {
+  .contact {
+    &__btn {
+      padding: 30px 120px;
+      margin: 45px auto;
+    }
+  }
+}

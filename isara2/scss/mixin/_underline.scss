@@ -1,0 +1,4 @@
+@mixin underline($color) {
+  font-weight: bold;
+  background: linear-gradient(transparent 70%, $color 50%);
+}

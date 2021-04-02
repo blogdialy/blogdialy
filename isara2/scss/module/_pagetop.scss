@@ -1,0 +1,25 @@
+.pagetop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background-color: #ececec;
+  padding: 15px;
+
+  .fa-chevron-up {
+    font-size: 15px;
+  }
+}
+
+@include media(tablet) {
+  .pagetop {
+    bottom: 90px;
+    right: 50px;
+    padding: 20px;
+
+    .fa-chevron-up {
+      font-size: 30px;
+    }
+  }
+}
+

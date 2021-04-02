@@ -1,0 +1,22 @@
+@mixin blankets {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+@mixin blanket-before($color) {
+  border-top: 4px solid $color;
+  border-left: 4px solid $color;
+  top: 0;
+  left: 0;
+}
+
+@mixin blanket-after($color) {
+  border-bottom: 4px solid $color;
+  border-right: 4px solid $color;
+  bottom: 0;
+  right: 0;
+}

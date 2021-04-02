@@ -1,0 +1,42 @@
+.why {
+  position: relative;
+  background-color: #ebb94d;
+  color: #fff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 25px solid transparent;
+    border-top-color: #ebb94d;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+  }
+
+  &__icon {
+    background-color: #fff;
+    color: #ebb94d;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  &__ttl {
+    &::before, &::after {
+      @include blankets;
+    }
+
+    &::before {
+      @include blanket-before(#fff);
+    }
+
+    &::after {
+      @include blanket-after(#fff);
+    }
+  }
+}
